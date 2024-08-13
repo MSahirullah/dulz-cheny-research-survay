@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('frontend.layouts.app')
 @section('title')
     Stage 01 | Servay
 @endsection

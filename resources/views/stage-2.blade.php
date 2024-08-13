@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('frontend.layouts.app')
 @section('title')
     Stage 02 | Servay
 @endsection
@@ -126,9 +126,9 @@
 
                                     $bgs = [
                                         URL::asset('images/bg/0.png'),
-                                        URL::asset('images/bg/1.jpg'),
-                                        URL::asset('images/bg/2.jpg'),
-                                        URL::asset('images/bg/3.jpg'),
+                                        URL::asset('images/bg/1.png'),
+                                        URL::asset('images/bg/2.png'),
+                                        URL::asset('images/bg/3.png'),
                                         URL::asset('images/bg/4.png'),
                                         URL::asset('images/bg/5.png'),
                                         URL::asset('images/bg/6.png'),

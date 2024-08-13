@@ -153,32 +153,23 @@ class ServayController extends Controller
 
         $servayDetails->audio = $audioSelections;
 
-        $kid = new Kid();
-        $kid->name = $servayDetails->name;
-        $kid->age = $servayDetails->age;
-        $kid->school = $servayDetails->school;
-        $kid->save();
+        $kid = Kid::create([
+            'name' => $servayDetails->name,
+            'age' => $servayDetails->age,
+            'school' => $servayDetails->school,
+        ]);
 
-        $backgrounds = new Background();
-        $backgrounds->kid_id = $kid->id;
-        foreach ($servayDetails->background as $background) {
-            $backgrounds->$background = true;
-        }
-        $backgrounds->save();
+        $backgroundData = array_fill_keys($servayDetails->background, true);
+        $backgroundData['kid_id'] = $kid->id;
+        Background::create($backgroundData);
 
-        $characters = new Character();
-        $characters->kid_id = $kid->id;
-        foreach ($servayDetails->character as $character) {
-            $characters->$character = true;
-        }
-        $characters->save();
+        $characterData = array_fill_keys($servayDetails->character, true);
+        $characterData['kid_id'] = $kid->id;
+        Character::create($characterData);
 
-        $audios = new Audio();
-        $audios->kid_id = $kid->id;
-        foreach ($servayDetails->audio as $audio) {
-            $audios->$audio = true;
-        }
-        $audios->save();
+        $audioData = array_fill_keys($servayDetails->audio, true);
+        $audioData['kid_id'] = $kid->id;
+        Audio::create($audioData);
 
         Session::forget('servayDetails');
 
