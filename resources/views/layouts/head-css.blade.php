@@ -5,6 +5,16 @@
         font-family: 'Comic Sans MS', cursive, sans-serif;
     }
 
+    .mx-wd {
+        max-width: 400px !important;
+    }
+
+    @media (min-width: 401px) {
+        .mx-wd {
+            width: auto;
+        }
+    }
+
     .context {
         width: 100%;
         position: absolute;

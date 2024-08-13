@@ -59,7 +59,7 @@
         </div>
     </div>
     <div>
-        <div class="fixed bottom-0 rounded-t-xl" style="background-color:rgb(28 31 26 / 66%) ">
+        <div class="fixed bottom-0 rounded-t-xl mx-wd" style="background-color:rgb(28 31 26 / 66%) ">
             <div class="animate__animated animate__pulse animate__infinite	infinite">
                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 500 200"
                     width="500" height="120" preserveAspectRatio="xMidYMid meet"

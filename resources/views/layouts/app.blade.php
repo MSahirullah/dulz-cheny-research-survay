@@ -14,8 +14,8 @@
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 
-<body style="background-color:#3f6455;">
-    <div class="area">
+<body class="mx-wd" style="background-color:#3f6455; ">
+    <div class="area mx-wd">
         <ul class="circles">
             <li></li>
             <li></li>
@@ -33,7 +33,13 @@
     </div>
 
     <div id="layout-wrapper" class="context">
-        @yield('content')
+        <div class=" flex justify-center">
+
+            <div class=" mx-wd">
+                @yield('content')
+            </div>
+
+        </div>
     </div>
 
 

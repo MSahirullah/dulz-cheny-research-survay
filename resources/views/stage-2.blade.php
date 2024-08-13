@@ -158,7 +158,7 @@
                         </div>
                     </div>
                     <div class="flex justify-between mt-12 mb-5">
-                        <button type="button" class="kid-button-back">Back</button>
+                        <a href="{{ route('stage-1') }}" type="button" class="kid-button-back">Back</a>
                         <button type="submit" class="kid-button-next">Next</button>
                     </div>
                 </form>

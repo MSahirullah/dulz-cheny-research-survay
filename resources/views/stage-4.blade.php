@@ -130,7 +130,7 @@
                         <img class="text-center" src="{{ URL::asset('images/logo.png') }}" alt="Logo" width="90">
                     </div>
                 </div>
-                <form action="{{ route('stage-3.submit') }}" method="POST">
+                <form action="{{ route('stage-4.submit') }}" method="POST">
                     @csrf
 
                     <div class="mb-5">
@@ -160,10 +160,10 @@
 
                                 @php
                                     $audios = [
-                                        'Bonnie' => URL::asset('audios/Bonnie.m4a'),
-                                        'Daphne' => URL::asset('audios/Daphne.m4a'),
-                                        'Mickey' => URL::asset('audios/Mickey.m4a'),
-                                        'Timmy' => URL::asset('audios/Timmy.m4a'),
+                                        'bonnie' => URL::asset('audios/Bonnie.m4a'),
+                                        'daphne' => URL::asset('audios/Daphne.m4a'),
+                                        'mickey' => URL::asset('audios/Mickey.m4a'),
+                                        'timmy' => URL::asset('audios/Timmy.m4a'),
                                     ];
 
                                     $selectedAudios = [];
@@ -190,7 +190,7 @@
                         </div>
                     </div>
                     <div class="flex justify-between mt-12 mb-5">
-                        <button type="button" class="kid-button-back">Back</button>
+                        <a href="{{ route('stage-3') }}" type="button" class="kid-button-back">Back</a>
                         <button type="submit" class="kid-button-next">Finish</button>
                     </div>
                 </form>
@@ -204,6 +204,19 @@
             @if (Session::has('error'))
                 flasher.error("{{ Session::get('error') }}");
             @endif
+
+            let audios = document.querySelectorAll('.audio-option audio');
+
+            audios.forEach(function(audio) {
+                audio.addEventListener('play', function() {
+                    audios.forEach(function(otherAudio) {
+                        if (otherAudio !== audio) {
+                            otherAudio.pause();
+                            otherAudio.currentTime = 0; // Optional: reset to the start
+                        }
+                    });
+                });
+            });
 
             $('.audio-option').click(function() {
                 $(this).toggleClass('selected');

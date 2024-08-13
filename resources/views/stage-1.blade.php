@@ -105,8 +105,8 @@
                             </div>
                         </h3>
                         <div>
-                            <input type="text" id="school" value="{{ old('school') ?? ($servayDetails->school ?? '') }}"
-                                name="school"
+                            <input type="text" id="school"
+                                value="{{ old('school') ?? ($servayDetails->school ?? '') }}" name="school"
                                 class="bg-gray-50 border text-lg border-gray-300 text-gray-900 rounded font-bold focus:ring-yellow-200 focus:border-yellow-200 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-yellow-200 dark:focus:border-yellow-200" />
                         </div>
                         <h3 class="mt-8 mb-5 text-xl font-medium tracking-tight leading-6 text-yellow">
@@ -154,7 +154,7 @@
                         </div>
                     </div>
                     <div class="flex justify-between mt-12 mb-5">
-                        <button type="button" class="kid-button-back">Back</button>
+                        <a href="{{ route('index') }}" type="button" class="kid-button-back">Back</a>
                         <button type="submit" class="kid-button-next">Next</button>
                     </div>
                 </form>

@@ -2,6 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Audio;
+use App\Models\Background;
+use App\Models\Character;
+use App\Models\Kid;
 use Flasher\Laravel\Facade\Flasher;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Session;
@@ -129,8 +133,8 @@ class ServayController extends Controller
 
     public function stageFourSubmit(Request $request)
     {
-        if (Session::has('surveyDetails')) {
-            $surveyDetails = Session::get('surveyDetails');
+        if (Session::has('servayDetails')) {
+            $servayDetails = Session::get('servayDetails');
         } else {
             return redirect()->route('stage-1');
         }
@@ -147,7 +151,34 @@ class ServayController extends Controller
 
         $audioSelections = $request->audio;
 
-        $surveyDetails->audio = $audioSelections;
+        $servayDetails->audio = $audioSelections;
+
+        $kid = new Kid();
+        $kid->name = $servayDetails->name;
+        $kid->age = $servayDetails->age;
+        $kid->school = $servayDetails->school;
+        $kid->save();
+
+        $backgrounds = new Background();
+        $backgrounds->kid_id = $kid->id;
+        foreach ($servayDetails->background as $background) {
+            $backgrounds->$background = true;
+        }
+        $backgrounds->save();
+
+        $characters = new Character();
+        $characters->kid_id = $kid->id;
+        foreach ($servayDetails->character as $character) {
+            $characters->$character = true;
+        }
+        $characters->save();
+
+        $audios = new Audio();
+        $audios->kid_id = $kid->id;
+        foreach ($servayDetails->audio as $audio) {
+            $audios->$audio = true;
+        }
+        $audios->save();
 
         Session::forget('servayDetails');
 

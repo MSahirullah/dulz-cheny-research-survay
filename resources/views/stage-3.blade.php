@@ -125,24 +125,24 @@
                                 @php
 
                                     $bgs = [
-                                        'M1' => URL::asset('images/characters/M1.png'),
-                                        'M2' => URL::asset('images/characters/M2.png'),
-                                        'M3' => URL::asset('images/characters/M3.png'),
-                                        'M4' => URL::asset('images/characters/M4.png'),
+                                        'm1' => URL::asset('images/characters/M1.png'),
+                                        'm2' => URL::asset('images/characters/M2.png'),
+                                        'm3' => URL::asset('images/characters/M3.png'),
+                                        'm4' => URL::asset('images/characters/M4.png'),
 
-                                        'F1' => URL::asset('images/characters/F1.png'),
-                                        'F2' => URL::asset('images/characters/F2.png'),
-                                        'F3' => URL::asset('images/characters/F3.png'),
-                                        'F4' => URL::asset('images/characters/F4.png'),
+                                        'f1' => URL::asset('images/characters/F1.png'),
+                                        'f2' => URL::asset('images/characters/F2.png'),
+                                        'f3' => URL::asset('images/characters/F3.png'),
+                                        'f4' => URL::asset('images/characters/F4.png'),
 
-                                        'A1' => URL::asset('images/characters/A1.png'),
-                                        'A2' => URL::asset('images/characters/A2.png'),
-                                        'A3' => URL::asset('images/characters/A3.png'),
-                                        'A4' => URL::asset('images/characters/A4.png'),
-                                        'A5' => URL::asset('images/characters/A5.png'),
-                                        'A6' => URL::asset('images/characters/A6.png'),
-                                        'A7' => URL::asset('images/characters/A7.png'),
-                                        'A8' => URL::asset('images/characters/A8.png'),
+                                        'a1' => URL::asset('images/characters/A1.png'),
+                                        'a2' => URL::asset('images/characters/A2.png'),
+                                        'a3' => URL::asset('images/characters/A3.png'),
+                                        'a4' => URL::asset('images/characters/A4.png'),
+                                        'a5' => URL::asset('images/characters/A5.png'),
+                                        'a6' => URL::asset('images/characters/A6.png'),
+                                        'a7' => URL::asset('images/characters/A7.png'),
+                                        'a8' => URL::asset('images/characters/A8.png'),
                                     ];
 
                                     $characters = [];
@@ -166,7 +166,7 @@
                         </div>
                     </div>
                     <div class="flex justify-between mt-12 mb-5">
-                        <button type="button" class="kid-button-back">Back</button>
+                        <a href="{{ route('stage-2') }}" type="button" class="kid-button-back">Back</a>
                         <button type="submit" class="kid-button-next">Next</button>
                     </div>
                 </form>
