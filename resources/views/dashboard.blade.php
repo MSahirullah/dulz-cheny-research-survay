@@ -396,8 +396,6 @@
 
                                             </tr>
                                         @endforeach
-
-                                        {{ Str::upper($key) }}
                                     </tbody>
                                 </table>
                             </div>
