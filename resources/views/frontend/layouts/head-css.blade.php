@@ -2,7 +2,7 @@
 
 <style>
     * {
-        font-family: 'Comic Sans MS', cursive, sans-serif;
+        font-family: 'Poppins', cursive, sans-serif !important;
     }
 
     .mx-wd {

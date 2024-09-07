@@ -7,6 +7,12 @@
         .circles {
             height: 120% !important;
         }
+
+        @media (max-width: 767px) {
+            .circles {
+                height: 115% !important;
+            }
+        }
     </style>
 @endsection
 @section('content')
