@@ -30,6 +30,8 @@ class DashboardController extends Controller
             return [$key => Character::where($key, 1)->count()];
         })->sortDesc()->toArray();
 
-        return view('dashboard', compact('totalKids', 'columnsBackground', 'columnsAudio', 'columnsCharacter'));
+        $kids = Kid::all();
+
+        return view('dashboard', compact('totalKids', 'columnsBackground', 'columnsAudio', 'columnsCharacter', 'kids'));
     }
 }
