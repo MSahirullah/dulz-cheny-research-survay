@@ -98,57 +98,80 @@
                         </h4>
                         <hr class="mb-6">
 
-                        <h3 class="mb-5 text-xl font-medium tracking-tight leading-6 text-yellow">
-                            <div class="grid grid-flow-col gap-4">
-                                <div class="col-span-2">01. </div>
-                                <div class="col-span-12">What is your school? (or where are you from?)</div>
-                            </div>
-                        </h3>
+                        
                         <div>
-                            <input type="text" id="school"
-                                value="{{ old('school') ?? ($servayDetails->school ?? '') }}" name="school"
-                                class="bg-gray-50 border text-lg border-gray-300 text-gray-900 rounded font-bold focus:ring-yellow-200 focus:border-yellow-200 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-yellow-200 dark:focus:border-yellow-200" />
+                            <h3 class="mt-8 mb-5 text-xl font-medium tracking-tight leading-6 text-yellow">
+                                <div class="grid grid-flow-col">
+                                    <div class="col-span-1">01. </div>
+                                    <div class="col-span-12">What is the parent's name? *</div>
+                                </div>
+                            </h3>
+                            <div>
+                                <input type="text" id="name"
+                                    value="{{ old('name') ?? ($servayDetails->name ?? '') }}" name="name"
+                                    class="bg-gray-50 border text-lg border-gray-300 text-gray-900 rounded font-bold focus:ring-yellow-200 focus:border-yellow-200 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-yellow-200 dark:focus:border-yellow-200"
+                                    required />
+                            </div>
                         </div>
-                        <h3 class="mt-8 mb-5 text-xl font-medium tracking-tight leading-6 text-yellow">
-                            <div class="grid grid-flow-col">
-                                <div class="col-span-1">02. </div>
-                                <div class="col-span-12">What is your name? *</div>
-                            </div>
-                        </h3>
+
                         <div>
-                            <input type="text" id="name" value="{{ old('name') ?? ($servayDetails->name ?? '') }}"
-                                name="name"
-                                class="bg-gray-50 border text-lg border-gray-300 text-gray-900 rounded font-bold focus:ring-yellow-200 focus:border-yellow-200 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-yellow-200 dark:focus:border-yellow-200"
-                                required />
+                            <h3 class="mt-8 mb-5 text-xl font-medium tracking-tight leading-6 text-yellow">
+                                <div class="grid grid-flow-col">
+                                    <div class="col-span-1">02. </div>
+                                    <div class="col-span-12">What is the kid's name? *</div>
+                                </div>
+                            </h3>
+                            <div>
+                                <input type="text" id="parent_name"
+                                    value="{{ old('parent_name') ?? ($servayDetails->parent_name ?? '') }}" name="parent_name"
+                                    class="bg-gray-50 border text-lg border-gray-300 text-gray-900 rounded font-bold focus:ring-yellow-200 focus:border-yellow-200 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-yellow-200 dark:focus:border-yellow-200"
+                                    required />
+                            </div>
                         </div>
-                        <h3 class="mt-8 mb-5 text-xl font-medium tracking-tight leading-6 text-yellow">
-                            <div class="grid grid-flow-col">
-                                <div class="col-span-1">03. </div>
-                                <div class="col-span-12">What is your age? *</div>
-                            </div>
-                        </h3>
                         <div>
-                            <input type="hidden" name="age" value="{{ old('age') ?? ($servayDetails->age ?? '') }}">
-                            <div class="flex justify-center gap-8 mb-8">
-                                <div class="age-option {{ old('age') ?? ($servayDetails->age ?? '') == 3 ? 'selected' : '' }} shadow-xl"
-                                    data-id="3">3
+                            <h3 class="mt-8 mb-5 text-xl font-medium tracking-tight leading-6 text-yellow">
+                                <div class="grid grid-flow-col gap-4">
+                                    <div class="col-span-2">03. </div>
+                                    <div class="col-span-12">What is the kid's school? (or where are you from?)</div>
                                 </div>
-                                <div class="age-option {{ old('age') ?? ($servayDetails->age ?? '') == 4 ? 'selected' : '' }} shadow-xl"
-                                    data-id="4">4
-                                </div>
-                                <div class="age-option {{ old('age') ?? ($servayDetails->age ?? '') == 5 ? 'selected' : '' }} shadow-xl"
-                                    data-id="5">5
-                                </div>
+                            </h3>
+                            <div>
+                                <input type="text" id="school"
+                                    value="{{ old('school') ?? ($servayDetails->school ?? '') }}" name="school"
+                                    class="bg-gray-50 border text-lg border-gray-300 text-gray-900 rounded font-bold focus:ring-yellow-200 focus:border-yellow-200 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-yellow-200 dark:focus:border-yellow-200" />
                             </div>
-                            <div class="flex justify-center gap-8">
-                                <div class="age-option {{ old('age') ?? ($servayDetails->age ?? '') == 6 ? 'selected' : '' }} shadow-xl"
-                                    data-id="6">6
+                        </div>
+                        <div>
+                            <h3 class="mt-8 mb-5 text-xl font-medium tracking-tight leading-6 text-yellow">
+                                <div class="grid grid-flow-col">
+                                    <div class="col-span-1">04. </div>
+                                    <div class="col-span-12">What is the kid age? *</div>
                                 </div>
-                                <div class="age-option {{ old('age') ?? ($servayDetails->age ?? '') == 7 ? 'selected' : '' }} shadow-xl"
-                                    data-id="7">7
+                            </h3>
+                            <div>
+                                <input type="hidden" name="age"
+                                    value="{{ old('age') ?? ($servayDetails->age ?? '') }}">
+                                <div class="flex justify-center gap-8 mb-8">
+                                    <div class="age-option {{ old('age') ?? ($servayDetails->age ?? '') == 3 ? 'selected' : '' }} shadow-xl"
+                                        data-id="3">3
+                                    </div>
+                                    <div class="age-option {{ old('age') ?? ($servayDetails->age ?? '') == 4 ? 'selected' : '' }} shadow-xl"
+                                        data-id="4">4
+                                    </div>
+                                    <div class="age-option {{ old('age') ?? ($servayDetails->age ?? '') == 5 ? 'selected' : '' }} shadow-xl"
+                                        data-id="5">5
+                                    </div>
                                 </div>
-                                <div class="age-option {{ old('age') ?? ($servayDetails->age ?? '') == 8 ? 'selected' : '' }} shadow-xl"
-                                    data-id="8">8
+                                <div class="flex justify-center gap-8">
+                                    <div class="age-option {{ old('age') ?? ($servayDetails->age ?? '') == 6 ? 'selected' : '' }} shadow-xl"
+                                        data-id="6">6
+                                    </div>
+                                    <div class="age-option {{ old('age') ?? ($servayDetails->age ?? '') == 7 ? 'selected' : '' }} shadow-xl"
+                                        data-id="7">7
+                                    </div>
+                                    <div class="age-option {{ old('age') ?? ($servayDetails->age ?? '') == 8 ? 'selected' : '' }} shadow-xl"
+                                        data-id="8">8
+                                    </div>
                                 </div>
                             </div>
                         </div>

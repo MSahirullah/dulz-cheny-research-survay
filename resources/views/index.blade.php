@@ -5,12 +5,12 @@
 @section('css')
     <style>
         .circles {
-            height: 120% !important;
+            height: 100% !important;
         }
 
         @media (max-width: 767px) {
             .circles {
-                height: 115% !important;
+                height: 100% !important;
             }
         }
     </style>
@@ -46,8 +46,8 @@
                         </div>
                     </div>
                 </div>
-
-                <p class="text-base my-4 p-2 text-center text-yellow-50 ">
+                {{-- // style="margin-bottom:100px" --}}
+                <p class="text-base mt-4 mb-0 p-2 text-center text-yellow-50 ">
                     <span class="font-bold">"Dulz and Cheny"</span> is a program that utilizes avatar-based learning
                     partners to
                     facilitate constructive
@@ -61,6 +61,47 @@
                     The program recognizes the importance of early childhood education in shaping a child's future
                     development.
                 </p>
+
+                <hr>
+
+                <p class="text-base mt-1 mb-0 p-2 text-center text-yellow-50 ">
+                    <span class="text-sm block mb-2">
+                        We are final-year undergraduates from the <a
+                            href="https://tech.cmb.ac.lk/department-of-information-and-communication-technology/">Department
+                            of ICT, Faculty of Technology, University of
+                            Colombo</a>, pursuing a Bachelor of Information and Communication Technology (Honours) degree.
+                    </span>
+                    <span class="text-sm block mb-2">
+                        As part of our degree program, we are conducting a research study, and this questionnaire has been
+                        developed to identify the <u>backgrounds</u>, <u>characters</u>, and <u>voices</u> that children
+                        interact with most
+                        frequently. The goal is to design a platform for Avatar-based Learning Partners in Constructive
+                        Learning.
+                    </span>
+                    <span class="text-sm block mb-2">
+
+                        We warmly invite you to participate in this study, as your input is highly valued. Your privacy and
+                        the confidentiality of your responses will be strictly protected, and We assure you that the
+                        information provided will only be used for academic purposes. Please read each question carefully
+                        and provide your responses. Your participation in this research is greatly appreciated. ❤️
+                    </span>
+
+                    <span class="text-sm block mb-2">
+                        <span class="font-bold">Note:</span> This survey is intended for parents or guardians of
+                        children under 8 years of age. Parents or guardians should complete the survey based on their
+                        child's preferences and choices.
+                    </span>
+                </p>
+                <hr>
+
+                <p class="text-base  mb-0 p-2 text-center text-yellow-50 " style="margin-bottom:100px">
+                    <span class=" block mb-2"><span class="text-sm"> Research Supervisor:</span> <br> Ms. N. T.
+                        Weerawarna</span>
+                    <span class=" block mb-2"><span class="text-sm"> Research Team:</span> <br> M.T. Sahirullah <br> M.F.F.
+                        Fazla</span>
+                </p>
+
+
             </div>
         </div>
     </div>

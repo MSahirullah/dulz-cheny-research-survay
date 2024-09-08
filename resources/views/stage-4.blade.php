@@ -141,7 +141,7 @@
 
                         <h3 class="mb-5 text-xl font-medium tracking-tight leading-6 text-yellow">
                             <div class="grid grid-flow-col gap-4">
-                                <div class="col-span-2">06. </div>
+                                <div class="col-span-2">07. </div>
                                 <div class="col-span-12">Please choose your favorite audio clips. (You can choose
                                     multiple audio clips)</div>
                             </div>

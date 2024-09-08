@@ -32,6 +32,7 @@ class ServayController extends Controller
     {
         $rules = [
             'name' => 'required|string|max:255',
+            'parent_name' => 'required|string|max:255',
             'age' => 'required|integer|min:3|max:9',
             'school' => 'required|string|max:255',
         ];
@@ -46,6 +47,7 @@ class ServayController extends Controller
         $servayDetails->name = $request->name;
         $servayDetails->age = $request->age;
         $servayDetails->school = $request->school;
+        $servayDetails->parent_name = $request->parent_name;
 
         Session::put('servayDetails', $servayDetails);
 
@@ -157,6 +159,7 @@ class ServayController extends Controller
             'name' => $servayDetails->name,
             'age' => $servayDetails->age,
             'school' => $servayDetails->school,
+            'parent_name' => $servayDetails->parent_name,
         ]);
 
         $backgroundData = array_fill_keys($servayDetails->background, true);

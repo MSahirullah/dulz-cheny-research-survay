@@ -236,7 +236,10 @@
                                                 ID
                                             </th>
                                             <th scope="col" class="px-6 py-2 text-center ">
-                                                name
+                                                parent name
+                                            </th>
+                                            <th scope="col" class="px-6 py-2 text-center ">
+                                                kid name
                                             </th>
                                             <th scope="col" class="px-6 py-2 text-center ">
                                                 age
@@ -262,6 +265,9 @@
                                                     class="px-6 py-2 font-medium text-gray-900 whitespace-nowrap dark:text-white">
                                                     {{ $kid['id'] }}
                                                 </th>
+                                                <td class="px-6 py-2 text-start font-bold">
+                                                    {{ $kid['parent_name'] }}
+                                                </td>
                                                 <td class="px-6 py-2 text-start font-bold">
                                                     {{ $kid['name'] }}
                                                 </td>

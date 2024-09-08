@@ -105,7 +105,7 @@
 
                         <h3 class="mb-5 text-xl font-medium tracking-tight leading-6 text-yellow">
                             <div class="grid grid-flow-col gap-4">
-                                <div class="col-span-2">04. </div>
+                                <div class="col-span-2">05. </div>
                                 <div class="col-span-12">Please choose your favorite background images. (You can choose
                                     multiple images)</div>
                             </div>

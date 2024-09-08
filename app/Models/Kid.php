@@ -11,6 +11,7 @@ class Kid extends Model
 
     protected $fillable = [
         'name',
+        'parent_name',
         'age',
         'school',
     ];
