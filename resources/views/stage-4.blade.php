@@ -160,10 +160,10 @@
 
                                 @php
                                     $audios = [
-                                        'bonnie' => URL::asset('audios/Bonnie.m4a'),
-                                        'daphne' => URL::asset('audios/Daphne.m4a'),
-                                        'mickey' => URL::asset('audios/Mickey.m4a'),
-                                        'timmy' => URL::asset('audios/Timmy.m4a'),
+                                        'bonnie' => URL::asset('audios/Bonnie.mp3'),
+                                        'daphne' => URL::asset('audios/Daphne.mp3'),
+                                        'mickey' => URL::asset('audios/Mickey.mp3'),
+                                        'timmy' => URL::asset('audios/Timmy.mp3'),
                                     ];
 
                                     $selectedAudios = [];
