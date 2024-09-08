@@ -5,12 +5,12 @@
 @section('css')
     <style>
         .circles {
-            height: 100% !important;
+            height: 100vw !important;
         }
 
         @media (max-width: 767px) {
             .circles {
-                height: 100% !important;
+                height: 100vw !important;
             }
         }
     </style>

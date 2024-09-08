@@ -5,7 +5,7 @@
 @section('css')
     <style>
         .circles {
-            height: 110% !important;
+            height: 120% !important;
         }
 
         .age-option {
@@ -123,7 +123,7 @@
                             </h3>
                             <div>
                                 <input type="text" id="parent_name"
-                                    value="{{ old('parent_name') ?? ($servayDetails->parent_name ?? '') }}" name="parent_name"
+                                    value="{{ old('parent_name') ?? ($servayDetails->parent_name ?? '') }}" name="name"
                                     class="bg-gray-50 border text-lg border-gray-300 text-gray-900 rounded font-bold focus:ring-yellow-200 focus:border-yellow-200 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-yellow-200 dark:focus:border-yellow-200"
                                     required />
                             </div>
