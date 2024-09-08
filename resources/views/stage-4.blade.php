@@ -182,7 +182,8 @@
                                                 <source src="{{ $audioUrl }}" type="audio/mpeg">
                                                 Your browser does not support the audio element.
                                             </audio>
-                                            <p class="mt-2 capitalize">{{ $key }}</p>
+                                            <p class="mt-2 capitalize" style="text-transform: capitalize;">
+                                                {{ $key }}</p>
                                         </div>
                                     @endforeach
                                 </div>
