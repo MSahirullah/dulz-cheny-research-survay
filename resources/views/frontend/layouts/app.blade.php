@@ -7,7 +7,7 @@
     <title> @yield('title')| Dulz & Cheny Avatar-based Learning Partners in Constructive Learning</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- App favicon -->
-    <link rel="shortcut icon" href="{{ URL::asset('assets/images/favicon.png') }}">
+    <link rel="icon" type="image/x-icon" href="{{ URL::asset('images/favicon.ico') }}">
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.bunny.net">
