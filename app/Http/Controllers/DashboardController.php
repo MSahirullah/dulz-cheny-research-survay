@@ -17,15 +17,28 @@ class DashboardController extends Controller
         $columnsBackground = collect(range(0, 9))->mapWithKeys(function ($key) {
             return [$key => Background::where($key, 1)->count()];
         })->sortDesc()->toArray();
-        
+
         $columnsAudio = collect(['bonnie', 'daphne', 'mickey', 'timmy'])->mapWithKeys(function ($key) {
             return [$key => Audio::where($key, 1)->count()];
         })->sortDesc()->toArray();
-        
+
         $columnsCharacter = collect([
-            'm1', 'm2', 'm3', 'm4',
-            'f1', 'f2', 'f3', 'f4',
-            'a1', 'a2', 'a3', 'a4', 'a5', 'a6', 'a7', 'a8'
+            'm1',
+            'm2',
+            'm3',
+            'm4',
+            'f1',
+            'f2',
+            'f3',
+            'f4',
+            'a1',
+            'a2',
+            'a3',
+            'a4',
+            'a5',
+            'a6',
+            'a7',
+            'a8'
         ])->mapWithKeys(function ($key) {
             return [$key => Character::where($key, 1)->count()];
         })->sortDesc()->toArray();
@@ -33,5 +46,14 @@ class DashboardController extends Controller
         $kids = Kid::all();
 
         return view('dashboard', compact('totalKids', 'columnsBackground', 'columnsAudio', 'columnsCharacter', 'kids'));
+    }
+
+    public function deleteRercord(Request $request)
+    {
+        if ($request->id) {
+            $kid = Kid::find($request->id);
+            $kid->delete();
+        }
+        return redirect()->back();
     }
 }

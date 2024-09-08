@@ -5,7 +5,7 @@
 @section('css')
     <style>
         .circles {
-            height: 120% !important;
+            /* height: 120% !important; */
         }
 
         .age-option {
@@ -200,6 +200,14 @@
                 $(this).addClass('selected');
                 $('input[name="age"]').val($(this).data('id'));
             });
+
+            const body = document.body;
+            const html = document.documentElement;
+            const height = Math.max(body.scrollHeight, body.offsetHeight,
+                html.clientHeight, html.scrollHeight, html.offsetHeight);
+
+            const circles = document.querySelector('.circles');
+            circles.style.height = height + 'px';
         });
     </script>
 @endsection

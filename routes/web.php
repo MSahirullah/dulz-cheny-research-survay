@@ -25,6 +25,8 @@ Route::get('/thank-you', [ServayController::class, 'thankYouIndex'])->name('than
 Route::middleware(['auth', 'verified'])->group(function () {
     Route::get('/home', [DashboardController::class, 'index'])->name('home');
     Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
+
+    Route::post('/delete/record/', [DashboardController::class, 'deleteRercord'])->name('delete.record');
 });
 
 Route::middleware('auth')->group(function () {

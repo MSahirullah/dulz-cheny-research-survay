@@ -5,12 +5,12 @@
 @section('css')
     <style>
         .circles {
-            height: 100vw !important;
+            /* height: 100vw !important; */
         }
 
         @media (max-width: 767px) {
             .circles {
-                height: 100vw !important;
+                /* height: 100vw !important; */
             }
         }
     </style>
@@ -314,5 +314,15 @@
 @endsection
 @section('scripts')
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.12/lottie.min.js"></script>
-    <script></script>
+    <script>
+        $(document).ready(function() {
+            const body = document.body;
+            const html = document.documentElement;
+            const height = Math.max(body.scrollHeight, body.offsetHeight,
+                html.clientHeight, html.scrollHeight, html.offsetHeight);
+
+            const circles = document.querySelector('.circles');
+            circles.style.height = height + 'px';
+        });
+    </script>
 @endsection

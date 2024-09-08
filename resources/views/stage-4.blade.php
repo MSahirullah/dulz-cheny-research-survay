@@ -5,11 +5,11 @@
 @section('css')
     <style>
         .circles {
-            height: 110% !important;
+            /* height: 110vh !important; */
         }
 
         .bg-option img {
-            height: 100%;
+            /* height: 100%; */
             object-fit: contain;
         }
 
@@ -236,6 +236,14 @@
                     }).appendTo('form');
                 });
             });
+            const body = document.body;
+            const html = document.documentElement;
+            const height = Math.max(body.scrollHeight, body.offsetHeight,
+                html.clientHeight, html.scrollHeight, html.offsetHeight);
+
+            const circles = document.querySelector('.circles');
+            circles.style.height = height + 'px';
+
         });
     </script>
 @endsection

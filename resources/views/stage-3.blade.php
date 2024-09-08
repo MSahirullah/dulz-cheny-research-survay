@@ -5,11 +5,11 @@
 @section('css')
     <style>
         .circles {
-            height: 110% !important;
+            /* height: 110% !important; */
         }
 
         .bg-option img {
-            height: 100%;
+            /* height: 100%; */
             object-fit: contain;
         }
 
@@ -156,7 +156,7 @@
                                 <div class="grid grid-cols-2 gap-4 px-4">
                                     @foreach ($bgs as $key => $bg)
                                         <div class="... bg-option {{ in_array($key, $characters) ? 'selected' : '' }} shadow-xl"
-                                            data-id="{{ $key }}"">
+                                            data-id="{{ $key }}">
                                             <img src="{{ $bg }}" class="rounded-md" alt="">
 
                                         </div>
@@ -201,6 +201,14 @@
                     }).appendTo('form');
                 });
             });
+
+            const body = document.body;
+            const html = document.documentElement;
+            const height = Math.max(body.scrollHeight, body.offsetHeight,
+                html.clientHeight, html.scrollHeight, html.offsetHeight);
+
+            const circles = document.querySelector('.circles');
+            circles.style.height = height + 'px';
         });
     </script>
 @endsection
