@@ -16,7 +16,7 @@ class ServayController extends Controller
     public function index()
     {
         Session::forget('servayDetails');
-        return view('index');
+        return view('survay.index');
     }
 
     public function stageOneIndex()
@@ -25,7 +25,7 @@ class ServayController extends Controller
         if (Session::has('servayDetails')) {
             $servayDetails = Session::get('servayDetails');
         }
-        return view('stage-1', compact('servayDetails'));
+        return view('survay.stage-1', compact('servayDetails'));
     }
 
     public function stageOneSubmit(Request $request)
@@ -51,7 +51,7 @@ class ServayController extends Controller
 
         Session::put('servayDetails', $servayDetails);
 
-        return redirect()->route('stage-2');
+        return redirect()->route('survay.stage-2');
     }
 
     public function stageTwoIndex()
@@ -59,16 +59,16 @@ class ServayController extends Controller
         if (Session::has('servayDetails')) {
             $servayDetails = Session::get('servayDetails');
         } else {
-            return redirect()->route('stage-1');
+            return redirect()->route('survay.stage-1');
         }
 
-        return view('stage-2', compact('servayDetails'));
+        return view('survay.stage-2', compact('servayDetails'));
     }
 
     public function stageTwoSubmit(Request $request)
     {
         if (!Session::has('servayDetails')) {
-            return redirect()->route('stage-1');
+            return redirect()->route('survay.stage-1');
         }
 
         $validator = Validator::make($request->all(), [
@@ -85,7 +85,7 @@ class ServayController extends Controller
         $servayDetails->background = $request->background;
         Session::put('servayDetails', $servayDetails);
 
-        return redirect()->route('stage-3');
+        return redirect()->route('survay.stage-3');
     }
 
     public function stageThreeIndex()
@@ -93,16 +93,16 @@ class ServayController extends Controller
         if (Session::has('servayDetails')) {
             $servayDetails = Session::get('servayDetails');
         } else {
-            return redirect()->route('stage-1');
+            return redirect()->route('survay.stage-1');
         }
 
-        return view('stage-3', compact('servayDetails'));
+        return view('survay.stage-3', compact('servayDetails'));
     }
 
     public function stageThreeSubmit(Request $request)
     {
         if (!Session::has('servayDetails')) {
-            return redirect()->route('stage-1');
+            return redirect()->route('survay.stage-1');
         }
 
         $validator = Validator::make($request->all(), [
@@ -119,7 +119,7 @@ class ServayController extends Controller
         $servayDetails->character = $request->character;
         Session::put('servayDetails', $servayDetails);
 
-        return redirect()->route('stage-4');
+        return redirect()->route('survay.stage-4');
     }
 
     public function stageFourIndex()
@@ -127,10 +127,10 @@ class ServayController extends Controller
         if (Session::has('servayDetails')) {
             $servayDetails = Session::get('servayDetails');
         } else {
-            return redirect()->route('stage-1');
+            return redirect()->route('survay.stage-1');
         }
 
-        return view('stage-4', compact('servayDetails'));
+        return view('survay.stage-4', compact('servayDetails'));
     }
 
     public function stageFourSubmit(Request $request)
@@ -138,7 +138,7 @@ class ServayController extends Controller
         if (Session::has('servayDetails')) {
             $servayDetails = Session::get('servayDetails');
         } else {
-            return redirect()->route('stage-1');
+            return redirect()->route('survay.stage-1');
         }
 
         $rules = [
@@ -176,11 +176,11 @@ class ServayController extends Controller
 
         Session::forget('servayDetails');
 
-        return redirect()->route('thank-you');
+        return redirect()->route('survay.thank-you');
     }
 
     public function thankYouIndex()
     {
-        return view('thank-you');
+        return view('survay.thank-you');
     }
 }
