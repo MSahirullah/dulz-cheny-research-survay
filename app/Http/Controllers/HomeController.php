@@ -37,10 +37,10 @@ class HomeController extends Controller
             $user->password = Hash::make('password');
             $user->save();
 
-            //Mail::to($email)->send(new VerificationCodeMail($user->email_verification_token));
+            Mail::to($email)->send(new VerificationCodeMail($user->email_verification_token));
             Session::put('user', $user);
 
-            return response()->json(['message' => 'We have sent a verification email, please check your inbox.', 'email' => "{$email} - {$user->email_verification_token}"], 200);
+            return response()->json(['message' => 'We have sent a verification email, please check your inbox.', 'email' => "{$email}"], 200);
         } catch (\Throwable $th) {
             return response()->json(['message' => 'Internal server error.'], 500);
         }
