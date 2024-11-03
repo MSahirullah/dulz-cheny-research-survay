@@ -406,7 +406,7 @@
                             <div class="row">
                                 <div class="col-md-3">
                                     <div class="activity-question">
-                                        🎈🎈🎈🎈🎈
+                                        🎈🎈
                                     </div>
                                 </div>
                                 <div class="col-md-1">
@@ -418,7 +418,7 @@
 
                                 <div class="col-md-3">
                                     <div class="activity-question">
-                                        🎈🎈🎈
+                                        🎈🎈
                                     </div>
                                 </div>
                                 <div class="col-md-1">
@@ -439,7 +439,7 @@
 
                                         <button type="button" data-status="wrong"
                                             class="button button-info mb-2 activity-answer text-white">
-                                            🎈🎈🎈🎈🎈🎈
+                                            🎈🎈🎈🎈🎈
                                         </button>
                                     </div>
                                 </div>
@@ -447,7 +447,7 @@
                                     <div style="min-height: 72px;">
                                         <button type="button" data-status="correct"
                                             class="button button-info mb-2 activity-answer text-white">
-                                            🎈🎈🎈🎈🎈🎈🎈🎈
+                                            🎈🎈🎈🎈
                                         </button>
                                     </div>
                                 </div>
@@ -456,7 +456,7 @@
 
                                         <button type="button" data-status="wrong"
                                             class="button button-info mb-2 px-2 activity-answer text-white">
-                                            🎈🎈🎈🎈🎈🎈🎈🎈🎈
+                                            🎈🎈🎈🎈🎈
                                         </button>
                                     </div>
                                 </div>
@@ -517,7 +517,7 @@
     <script>
         $(document).ready(function() {
             // remove code
-            
+
             //remove code end
 
             $('.activity-answer').click(function() {
