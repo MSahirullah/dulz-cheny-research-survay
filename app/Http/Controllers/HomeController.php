@@ -29,18 +29,29 @@ class HomeController extends Controller
             $age = $request->input('age');
             $email = $request->input('email');
 
-            $user = new User();
-            $user->name = $name;
-            $user->age = $age;
-            $user->email = $email;
-            $user->email_verification_token = mt_rand(100000, 999999);
-            $user->password = Hash::make('password');
-            $user->save();
+            $user = User::where('email', $email)->first();
 
-            Mail::to($email)->send(new VerificationCodeMail($user->email_verification_token));
+            if ($user) {
+                $user->name = $name;
+                $user->age = $age;
+            } else {
+                $user = new User();
+                $user->name = $name;
+                $user->age = $age;
+                $user->email = $email;
+                $user->email_verification_token = mt_rand(100000, 999999);
+                $user->password = Hash::make('password');
+            }
+            $user->save();
             Session::put('user', $user);
 
-            return response()->json(['message' => 'We have sent a verification email, please check your inbox.', 'email' => "{$email}"], 200);
+            if (!$user->email_verified_at) {
+                Mail::to($email)->send(new VerificationCodeMail($user->email_verification_token));
+                return response()->json(['message' => 'We have sent a verification email, please check your inbox.', 'email' => "{$email}", 'is_email_verified' => !empty($user->email_verified_at)], 200);
+            }
+            else{
+                return response()->json(['message' => 'Welcome Back.', 'email' => "{$email}", 'is_email_verified' => !empty($user->email_verified_at)], 200);
+            }
         } catch (\Throwable $th) {
             return response()->json(['message' => 'Internal server error.'], 500);
         }

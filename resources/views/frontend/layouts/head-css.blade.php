@@ -129,6 +129,22 @@
         transform: translateY(-50%);
     }
 
+    .activity-question {
+        font-family: "Akaya Kanadaka", system-ui;
+        border-radius: 16px;
+        border-width: 0 0 4px;
+        font-size: 28px;
+        font-weight: 700;
+        letter-spacing: .8px;
+        line-height: 20px;
+        padding: 18px 18px;
+        border: 3px solid #383838;
+    }
+
+    .activity-question:nth-child(1) {
+        background-color: #ffc400;
+    }
+
     .button {
         font-family: "Akaya Kanadaka", system-ui;
         font-weight: 400;

@@ -124,6 +124,11 @@
                             <div style="min-height: 80px;">
                                 <button type="button" class="button button-info mb-2">Math Lesson 2</button>
                             </div>
+
+                            <div style="min-height: 80px;">
+                                <button type="button" id="scene-3-activity-1"
+                                    class="button button-success mb-2">Activities</button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -188,6 +193,298 @@
         Your browser does not support HTML5 video.
     </video>
 
+    <div class="modal modal-green" tabindex="-1" id="activity-for-kid" data-bs-backdrop="static"
+        data-bs-keyboard="false">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content px-5 py-3">
+                <div class="modal-body">
+                    <div class="form-group mb-4 scene-07-activity" id="activity-1">
+                        <div class="row mb-3">
+                            <h5 class="text-start text-white">Activity 01</h5>
+                        </div>
+                        <div>
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <div class="activity-question">
+                                        🍎
+                                    </div>
+                                </div>
+                                <div class="col-md-1">
+                                    <div class="activity-question text-center"
+                                        style="background-color:#ffffff !important">
+                                        +
+                                    </div>
+                                </div>
+
+                                <div class="col-md-3">
+                                    <div class="activity-question">
+                                        🍎🍎
+                                    </div>
+                                </div>
+                                <div class="col-md-1">
+                                    <div class="activity-question text-center"
+                                        style="background-color:#ffffff !important">
+                                        =
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="activity-question activity-answer-box"
+                                        style="background-color:yellow !important; min-height:60.8px;">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mt-4">
+                                <div class="col-md-4">
+                                    <div style="min-height: 72px;">
+
+                                        <button type="button" data-status="wrong"
+                                            class="button button-info mb-2 activity-answer text-white">
+                                            🍎🍎
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div style="min-height: 72px;">
+
+                                        <button type="button" data-status="correct"
+                                            class="button button-info mb-2 activity-answer text-white">
+                                            🍎🍎🍎
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div style="min-height: 72px;">
+
+                                        <button type="button" data-status="wrong"
+                                            class="button button-info mb-2 activity-answer text-white">
+                                            🍎🍎🍎🍎
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group mb-4 scene-07-activity" id="activity-2">
+                        <div class="row mb-3">
+                            <h5 class="text-start text-white">Activity 02</h5>
+                        </div>
+                        <div>
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <div class="activity-question">
+                                        ⚽⚽⚽
+                                    </div>
+                                </div>
+                                <div class="col-md-1">
+                                    <div class="activity-question text-center"
+                                        style="background-color:#ffffff !important">
+                                        +
+                                    </div>
+                                </div>
+
+                                <div class="col-md-3">
+                                    <div class="activity-question">
+                                        ⚽⚽
+                                    </div>
+                                </div>
+                                <div class="col-md-1">
+                                    <div class="activity-question text-center"
+                                        style="background-color:#ffffff !important">
+                                        =
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="activity-question activity-answer-box"
+                                        style="background-color:yellow !important; min-height:60.8px;ln">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mt-4">
+                                <div class="col-md-4">
+                                    <div style="min-height: 72px;">
+
+                                        <button type="button" data-status="wrong" data-icon="⚽"
+                                            class="button button-info mb-2 activity-answer text-white">
+                                            ⚽⚽⚽⚽
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div style="min-height: 72px;">
+                                        <button type="button" data-status="wrong" data-icon="⚽"
+                                            class="button button-info mb-2 activity-answer text-white">
+                                            ⚽⚽⚽⚽⚽⚽
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div style="min-height: 72px;">
+
+                                        <button type="button" data-status="correct" data-icon="⚽"
+                                            class="button button-info mb-2 activity-answer text-white">
+                                            ⚽⚽⚽⚽⚽
+                                        </button>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group mb-4 scene-07-activity" id="activity-3" style="display: none;">
+                        <div class="row mb-3">
+                            <h5 class="text-start text-white">Activity 03</h5>
+                        </div>
+                        <div>
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <div class="activity-question">
+                                        🐇🐇🐇🐇
+                                    </div>
+                                </div>
+                                <div class="col-md-1">
+                                    <div class="activity-question text-center"
+                                        style="background-color:#ffffff !important">
+                                        +
+                                    </div>
+                                </div>
+
+                                <div class="col-md-3">
+                                    <div class="activity-question">
+                                        🐇🐇
+                                    </div>
+                                </div>
+                                <div class="col-md-1">
+                                    <div class="activity-question text-center"
+                                        style="background-color:#ffffff !important">
+                                        =
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="activity-question activity-answer-box"
+                                        style="background-color:yellow !important; min-height:60.8px;ln">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mt-4">
+                                <div class="col-md-4">
+                                    <div style="min-height: 72px;">
+
+                                        <button type="button" data-status="correct" data-icon="⚽"
+                                            class="button button-info mb-2 activity-answer text-white">
+                                            🐇🐇🐇🐇🐇🐇
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div style="min-height: 72px;">
+
+                                        <button type="button" data-status="wrong" data-icon="⚽"
+                                            class="button button-info mb-2 activity-answer text-white">
+                                            🐇🐇🐇🐇
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div style="min-height: 72px;">
+                                        <button type="button" data-status="wrong" data-icon="⚽"
+                                            class="button button-info mb-2 activity-answer text-white">
+                                            🐇🐇🐇🐇🐇🐇🐇
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group scene-07-activity" id="activity-4" style="display: none;">
+                        <div class="row mb-3">
+                            <h5 class="text-start text-white">Activity 04</h5>
+                        </div>
+                        <div>
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <div class="activity-question">
+                                        🎈🎈🎈🎈🎈
+                                    </div>
+                                </div>
+                                <div class="col-md-1">
+                                    <div class="activity-question text-center"
+                                        style="background-color:#ffffff !important">
+                                        +
+                                    </div>
+                                </div>
+
+                                <div class="col-md-3">
+                                    <div class="activity-question">
+                                        🎈🎈🎈
+                                    </div>
+                                </div>
+                                <div class="col-md-1">
+                                    <div class="activity-question text-center"
+                                        style="background-color:#ffffff !important">
+                                        =
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="activity-question activity-answer-box"
+                                        style="background-color:yellow !important; min-height:60.8px;ln">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mt-4">
+                                <div class="col-md-4">
+                                    <div style="min-height: 72px;">
+
+                                        <button type="button" data-status="wrong"
+                                            class="button button-info mb-2 activity-answer text-white">
+                                            🎈🎈🎈🎈🎈🎈
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div style="min-height: 72px;">
+                                        <button type="button" data-status="correct"
+                                            class="button button-info mb-2 activity-answer text-white">
+                                            🎈🎈🎈🎈🎈🎈🎈🎈
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div style="min-height: 72px;">
+
+                                        <button type="button" data-status="wrong"
+                                            class="button button-info mb-2 px-2 activity-answer text-white">
+                                            🎈🎈🎈🎈🎈🎈🎈🎈🎈
+                                        </button>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="d-flex justify-content-between gap-5 mt-5">
+                        <div style="min-height: 80px;">
+                            <button type="button" id="activity-close-btn"
+                                class="button button-danger mb-2">Close</button>
+                        </div>
+                        <div style="min-height: 80px;">
+                            <button type="button" id="activity-next-btn"
+                                class="button button-primary mb-2 px-5">Next...</button>
+                        </div>
+                        <div style="min-height: 80px; display:none;">
+                            <button type="button" id="activity-previous-btn"
+                                class="button button-primary mb-2 px-5">...Previous</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
     {{-- SCENE 08 --}}
     <video class="bg-video" id="bg-8" onloadstart="this.volume=1" style="display: none">
         <source src="{{ asset('videos/scene_8.mp4') }}" type="video/mp4">
@@ -220,14 +517,96 @@
     <script>
         $(document).ready(function() {
             // remove code
-            // $("#study-material-modal").modal('show');
-            // $("#scene-1-start-button-div").hide();
-            // $("#scene-1-titles").hide();
-            // $("#question-from-kid").modal('show');
+            
             //remove code end
 
+            $('.activity-answer').click(function() {
+                $(this).parent().parent().parent().find('.activity-answer').each(function() {
+                    $(this).removeClass('button-danger').addClass('button-info');
+                    $(this).removeClass('button-success').addClass('button-info');
+                });
+                $(this).parent().parent().parent().parent().find('.activity-answer-box').text('');
+                $(this).removeClass('button-danger').addClass('button-info');
+                $(this).removeClass('button-success').addClass('button-info');
+
+                if ($(this).data('status') === 'correct') {
+
+                    $(this).removeClass('button-info').addClass('button-success');
+                    $(this).parent().parent().parent().parent().find('.activity-answer-box').text($(this)
+                        .text());
+
+                    var isAllAnswered = true;
+
+                    $('.scene-07-activity').each(function() {
+                        if ($(this).find('.activity-answer-box').text().trim() === '') {
+                            isAllAnswered = false;
+                        }
+
+                    });
+                    if (isAllAnswered) {
+                        $("#activity-for-kid").modal('hide');
+                        $(".bg-video").hide();
+                        var video = $("#bg-9").show()[0];
+                        video.muted = false;
+                        video.play();
+                        video.playbackRate = 0.9;
+                        $("#scene-1-start-button-div").hide();
+                        $("#scene-1-titles").hide();
+                    }
+                    //
+                } else {
+                    $(this).removeClass('button-info').addClass('button-danger');
+                    setTimeout(() => {
+                        $(this).removeClass('button-danger').addClass('button-info');
+                    }, 1500);
+
+                }
+            });
+
+            $("#activity-next-btn").click(function() {
+                $("#activity-1").hide();
+                $("#activity-2").hide();
+                $("#activity-3").show();
+                $("#activity-4").show();
+
+                $(this).parent().hide();
+                $('#activity-previous-btn').parent().show();
+            });
+
+            $("#activity-previous-btn").click(function() {
+                $("#activity-1").show();
+                $("#activity-2").show();
+                $("#activity-3").hide();
+                $("#activity-4").hide();
+
+                $(this).parent().hide();
+                $('#activity-next-btn').parent().show();
+            });
+
+            $('#activity-close-btn').click(function() {
+
+                $("#activity-for-kid").modal('hide');
+
+                $(".bg-video").hide();
+                var video = $("#bg-1").show()[0];
+                video.muted = false;
+                video.play();
+                video.playbackRate = 0.9;
+                $("#study-material-modal").modal('show');
+                $("#timer-box-div").hide();
+                timeLeft = 600;
+            });
+
+            $("#scene-3-activity-1").click(function() {
+                $("#study-material-modal").modal('hide');
+                $("#activity-for-kid").modal('show');
+                $("#timer-box-div").show();
+                updateTimer();
+            });
+
+
             $("#scene-1-start-button").click(function() {
-                $("#bg-1").hide();
+                $(".bg-video").hide();
                 var video = $("#bg-2").show()[0];
                 video.muted = false;
                 video.play();
@@ -238,6 +617,8 @@
 
             $("#bg-2").on('ended', function() {
                 $("#stage-2-form-modal").modal('show');
+                $("#scene-1-start-button-div").hide();
+                $("#scene-1-titles").hide();
             });
 
             $(document).on('submit', '#stage-2-form', function(e) {
@@ -259,11 +640,25 @@
                     success: function(response, status, xhr) {
                         if (xhr.status === 200) {
                             $("#stage-2-form-modal").modal('hide');
+
+                            if (response.is_email_verified == true) {
+                                $(".bg-video").hide();
+                                var video = $("#bg-3").show()[0];
+                                video.muted = false;
+                                video.play();
+                                video.playbackRate = 0.9;
+                                $("#scene-1-start-button-div").hide();
+                                $("#scene-1-titles").hide();
+                                //
+                            } else {
+                                $("#email-verification-modal .title-text").text(
+                                    "Please check your " + response.email +
+                                    " email for the verification code and enter it below."
+                                );
+                                $("#email-verification-modal").modal('show');
+                            }
+
                             flasher.success(response.message);
-                            $("#email-verification-modal .title-text").text(
-                                "Please check your " + response.email +
-                                " email for the verification code and enter it below.");
-                            $("#email-verification-modal").modal('show');
 
                         } else {
                             flasher.error("Internal Server Error.");
@@ -307,11 +702,13 @@
                             $("#email-verification-modal").modal('hide');
                             flasher.success(response.message);
 
-                            $("#bg-2").hide();
+                            $(".bg-video").hide();
                             var video = $("#bg-3").show()[0];
                             video.muted = false;
                             video.play();
                             video.playbackRate = 0.9;
+                            $("#scene-1-start-button-div").hide();
+                            $("#scene-1-titles").hide();
 
                         } else {
                             flasher.error(response.message);
@@ -328,7 +725,8 @@
 
             $('.verification-input').each(function(index, input) {
                 $(input).on('input', function() {
-                    if ($(this).val().length === 1 && index < $('.verification-input').length - 1) {
+                    if ($(this).val().length === 1 && index < $('.verification-input').length -
+                        1) {
                         $('.verification-input').eq(index + 1).focus();
                     }
                 });
@@ -346,11 +744,13 @@
                 $("#study-material-modal").modal('show');
                 $("#timer-box-div").hide();
                 timeLeft = 600;
+                $("#scene-1-start-button-div").hide();
+                $("#scene-1-titles").hide();
             });
 
             $("#scene-3-lesson-1").click(function() {
                 $("#study-material-modal").modal('hide');
-                $("#bg-3").hide();
+                $(".bg-video").hide();
                 var video = $("#bg-4").show()[0];
                 video.muted = false;
                 video.play();
@@ -358,61 +758,71 @@
 
                 $("#timer-box-div").show();
                 updateTimer();
+                $("#scene-1-start-button-div").hide();
+                $("#scene-1-titles").hide();
 
             });
 
             $("#bg-4").on('ended', function() {
-                $("#bg-4").hide();
+                $(".bg-video").hide();
                 var video = $("#bg-5").show()[0];
                 video.muted = false;
                 video.play();
                 video.playbackRate = 0.9;
+                $("#scene-1-start-button-div").hide();
+                $("#scene-1-titles").hide();
             });
 
             $("#bg-5").on('ended', function() {
-                $("#bg-5").hide();
+                $(".bg-video").hide();
                 var video = $("#bg-6").show()[0];
                 video.muted = false;
                 video.play();
                 video.playbackRate = 0.9;
+                $("#scene-1-start-button-div").hide();
+                $("#scene-1-titles").hide();
             });
 
             $("#bg-6").on('ended', function() {
                 $("#question-from-kid").modal('show');
+                $("#scene-1-start-button-div").hide();
+                $("#scene-1-titles").hide();
             });
 
             $(".lesson-1-correct-answer").click(function() {
                 $("#question-from-kid").modal('hide');
-                $("#bg-6").hide();
+                $(".bg-video").hide();
                 var video = $("#bg-7").show()[0];
                 video.muted = false;
                 video.play();
                 video.playbackRate = 0.9;
+                $("#scene-1-start-button-div").hide();
+                $("#scene-1-titles").hide();
             });
 
             $(".lesson-1-wrong-answer").click(function() {
                 $("#question-from-kid").modal('hide');
-                $("#bg-7").hide();
+                $(".bg-video").hide();
                 var video = $("#bg-8").show()[0];
                 video.muted = false;
                 video.play();
                 video.playbackRate = 0.9;
+                $("#scene-1-start-button-div").hide();
+                $("#scene-1-titles").hide();
             });
 
             $("#bg-8").on('ended', function() {
                 $("#question-from-kid").modal('show');
+                $("#scene-1-start-button-div").hide();
+                $("#scene-1-titles").hide();
             });
 
             $("#bg-7").on('ended', function() {
-                $("#bg-7").hide();
-                var video = $("#bg-9").show()[0];
-                video.muted = false;
-                video.play();
-                video.playbackRate = 0.9;
+                $("#activity-for-kid").modal('show');
             });
 
             $("#bg-9").on('ended', function() {
-                $("#bg-9").hide();
+                $(".bg-video").hide();
                 var video = $("#bg-1").show()[0];
                 video.muted = false;
                 video.play();
@@ -420,9 +830,11 @@
                 $("#study-material-modal").modal('show');
                 $("#timer-box-div").hide();
                 timeLeft = 600;
+                $("#scene-1-start-button-div").hide();
+                $("#scene-1-titles").hide();
             });
 
-            let timeLeft = 600; 
+            let timeLeft = 600;
             const $timerText = $('#timer-text');
             const $clockImage = $('#clock-image');
 
@@ -459,6 +871,8 @@
                 $("#study-material-modal").modal('show');
                 $("#timer-box-div").hide();
                 timeLeft = 600;
+                $("#scene-1-start-button-div").hide();
+                $("#scene-1-titles").hide();
             });
 
             $("#stage-2-form-modal").on("shown.bs.modal", function() {
