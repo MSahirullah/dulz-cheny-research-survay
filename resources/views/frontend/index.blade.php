@@ -5,6 +5,8 @@
         <img src="{{ asset('images/logo.png') }}" alt="Dulz & Cheny" width="100">
     </div>
 
+
+
     {{-- SCENE 01 --}}
     <video autoplay loop muted class="bg-video" id="bg-1" onloadstart="this.volume=1">
         <source src="{{ asset('videos/scene_1_1.mp4') }}" type="video/mp4">
@@ -122,12 +124,13 @@
                                 </button>
                             </div>
                             <div style="min-height: 80px;">
-                                <button type="button" class="button button-info mb-2">Math Lesson 2</button>
+                                <button type="button" id="scene-3-activity-1"
+                                    class="button button-success mb-2">Activity 01</button>
                             </div>
 
                             <div style="min-height: 80px;">
-                                <button type="button" id="scene-3-activity-1"
-                                    class="button button-success mb-2">Activities</button>
+                                <button type="button" id="scene-3-activity-2"
+                                    class="button button-success mb-2">Activity 02</button>
                             </div>
                         </div>
                     </div>
@@ -485,6 +488,179 @@
         </div>
     </div>
 
+    <div class="modal modal-green " tabindex="-1" id="activity-for-kid-2" data-bs-backdrop="static"
+        data-bs-keyboard="false">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content px-5 pt-3 pb-1">
+                <div class="modal-body">
+                    <div class="position-realtive">
+                        <div id="story-1">
+                            <div style="position: absolute; bottom:0px;right:0px;">
+                                <img src="{{ asset('images/story-1.png') }}" alt="Story-1" height="375px;">
+                            </div>
+                            <h5 class="akaya  text-bold mb-3" style="font-size:22px; color:yellow;">Story 01 - The Sunrise
+                                Surprise 🦉</h5>
+                            <div class="akaya animate__animated animate__slideInUp text-white mb-2"
+                                style="font-size:24px;  line-height:32px;">
+                                In a green forest, there was a special tree with a magic branch. Animals said it was the
+                                best
+                                spot to watch the sunrise. One morning, <span class="fw-bolder" style="color:yellow;">3
+                                    wise owls</span> flew to the branch to enjoy the view.
+                            </div>
+                            <div class="akaya animate__animated animate__slideInUp text-white mb-2"
+                                style="font-size:24px; line-height:32px;">
+                                The owls hooted happily. Suddenly, they heard flapping sounds <span class="fw-bolder"
+                                    style="color:yellow;">2 little birds</span> were flying over, looking curious. “Can we
+                                join you?” asked one of the birds.
+                            </div>
+                            <div class="akaya animate__animated animate__slideInUp text-white mb-2"
+                                style="font-size:24px; line-height:32px;">
+                                “Of course!” the owls replied. “The magic branch has room for everyone!”
+                            </div>
+                            <div class="akaya animate__animated animate__slideInUp text-white mb-3"
+                                style="font-size:24px; line-height:32px;">
+                                The little birds landed beside the owls, and together, <br> they watched the sunrise.
+                            </div>
+
+                            <div class="akaya animate__animated animate__slideInUp  py-2 px-4"
+                                style="font-size:30px; border:2px dashed white; border-radius:12px; color:yellow; width:650px;">
+                                How many birds are on the magic branch now?
+
+                                <div class="d-flex justify-content-between gap-4 mt-4">
+                                    <div>
+                                        <div style="min-height: 66px; width:125px;">
+                                            <button type="button" data-status="wrong" style="line-height:13px;"
+                                                class="button button-info mb-2 activity-2-answer text-white">
+                                                4
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div style="min-height: 66px;  width:125px;">
+                                            <button type="button" data-status="correct" style="line-height:13px;"
+                                                class="button button-info mb-2 activity-2-answer text-white">
+                                                5
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div style="min-height: 66px;  width:125px;">
+
+                                            <button type="button" data-status="wrong" style="line-height:13px;"
+                                                class="button button-info mb-2 activity-2-answer text-white">
+                                                6
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div style="min-height: 66px;  width:125px;">
+                                            <button type="button" data-status="wrong" style="line-height:13px;"
+                                                class="button button-info mb-2 activity-2-answer text-white">
+                                                7
+                                            </button>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="story-2" style="display: none;">
+                            <div style="position: absolute; bottom:50px;right:0px;">
+                                <img src="{{ asset('images/story-2.png') }}" alt="Story-2" height="325px;">
+                            </div>
+                            <h5 class="akaya  text-bold mb-3" style="font-size:22px; color:yellow;">Story 02 - The
+                                Birthday Surprise 📚</h5>
+                            <div class="akaya animate__animated animate__slideInUp text-white mb-2"
+                                style="font-size:24px; line-height:32px;">
+                                For my last birthday, I was so excited because my family planned a special day for me. After
+                                cake and candles, my mom handed me a big, colorful gift bag. Inside, I found <span
+                                    class="fw-bolder" style="color:yellow;">3 storybooks!</span>
+                                Each one was filled with amazing pictures and adventures.
+                            </div>
+                            <div class="akaya animate__animated animate__slideInUp text-white mb-2"
+                                style="font-size:24px; line-height:32px;">
+                                Just then, my dad walked over with another present. I opened it and found <span
+                                    class="fw-bolder" style="color:yellow;">4 more storybooks!</span>
+                                <br> I couldn’t believe it—I now had so many new books to read!
+                            </div>
+                            <div class="akaya animate__animated animate__slideInUp text-white mb-2"
+                                style="font-size:24px; line-height:32px;">
+                                I sat on the couch, hugged my books, and couldn’t wait to start reading each one.
+                            </div>
+
+                            <div class="akaya animate__animated animate__slideInUp  py-3 px-4"
+                                style="font-size:30px; border:2px dashed white; border-radius:12px; color:yellow; width:650px;">
+                                Can you help me count how many storybooks <br>I have now?
+
+                                <div class="d-flex justify-content-between gap-4 mt-4">
+                                    <div>
+                                        <div style="min-height: 66px; width:125px;">
+                                            <button type="button" data-status="wrong" style="line-height:13px;"
+                                                class="button button-info mb-2 activity-2-answer-2 text-white">
+                                                5
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div style="min-height: 66px;  width:125px;">
+                                            <button type="button" data-status="wrong" style="line-height:13px;"
+                                                class="button button-info mb-2 activity-2-answer-2 text-white">
+                                                6
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div style="min-height: 66px;  width:125px;">
+
+                                            <button type="button" data-status="correct" style="line-height:13px;"
+                                                class="button button-info mb-2 activity-2-answer-2 text-white">
+                                                7
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div style="min-height: 66px;  width:125px;">
+                                            <button type="button" data-status="wrong" style="line-height:13px;"
+                                                class="button button-info mb-2 activity-2-answer-2 text-white">
+                                                8
+                                            </button>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="d-flex justify-content-between gap-5 mt-3">
+                            <div style="min-height: 80px;">
+                                <button type="button" id="activity-for-kid-2-activity-close-btn"
+                                    class="button button-danger mb-2">Close</button>
+                            </div>
+                            <div style="min-height: 80px; display:none;">
+                                <button type="button" id="activity-for-kid-2-activity-next-btn"
+                                    class="button button-primary mb-2 px-5">Next...</button>
+                            </div>
+                            <div class="d-flex gap-5">
+                                <div style="min-height: 80px; display:none;">
+                                    <button type="button" id="activity-for-kid-2-activity-previous-btn"
+                                        class="button button-primary mb-2 px-5">...Previous</button>
+                                </div>
+                                <div style="min-height: 80px; display:none;">
+                                    <button type="button" id="activity-for-kid-2-activity-finish-btn"
+                                        class="button button-primary px-5">Finish</button>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     {{-- SCENE 08 --}}
     <video class="bg-video" id="bg-8" onloadstart="this.volume=1" style="display: none">
         <source src="{{ asset('videos/scene_8.mp4') }}" type="video/mp4">
@@ -506,7 +682,7 @@
 
     <div style="display: none" id="timer-box-div">
         <div id="timer-box"
-            style="position: fixed; top: 10px; right: 10px; background-color: yellow; border: 2px solid #ffffff; padding: 10px; border-radius: 8px; display: flex; align-items: center;">
+            style="position: fixed;z-index:9999; top: 10px; right: 10px; background-color: yellow; border: 2px solid #ffffff; padding: 10px; border-radius: 8px; display: flex; align-items: center;">
             <img src="{{ asset('images/timer.png') }}" id="clock-image" alt="Clock"
                 style="width: 20px; margin-right: 10px; transition: transform 1s linear;">
             <span id="timer-text" class="akaya fs-22">01:00</span>
@@ -517,8 +693,118 @@
     <script>
         $(document).ready(function() {
             // remove code
-
+            // $("#scene-3-lesson-1").click(function() {
             //remove code end
+
+            $(".activity-2-answer-2").click(function() {
+                $('.activity-2-answer-2').removeClass('button-danger').addClass('button-info');
+                $('.activity-2-answer-2').removeClass('button-success').addClass('button-info');
+
+                if ($(this).data('status') === 'correct') {
+                    $(this).removeClass('button-info').addClass('button-success');
+                } else {
+                    $(this).removeClass('button-info').addClass('button-danger');
+                    setTimeout(() => {
+                        $(this).removeClass('button-danger').addClass('button-info');
+                    }, 1000);
+                }
+            });
+
+            $("#activity-for-kid-2-activity-finish-btn").click(function() {
+                var isCompleted1 = false;
+                var isCompleted2 = false;
+
+                $(".activity-2-answer").each(function() {
+                    if ($(this).data('status') === 'correct') {
+                        if ($(this).hasClass('button-success')) {
+                            isCompleted1 = true;
+                        }
+                    }
+                });
+
+                $(".activity-2-answer-2").each(function() {
+                    if ($(this).data('status') === 'correct') {
+                        if ($(this).hasClass('button-success')) {
+                            isCompleted2 = true;
+                        }
+                    }
+                });
+
+                if (isCompleted1 && isCompleted2) {
+                    $(".modal").modal('hide');
+
+                    $(".bg-video").hide();
+                    var video = $("#bg-9").show()[0];
+                    video.muted = false;
+                    video.play();
+                    video.playbackRate = 0.9;
+                    $("#scene-1-start-button-div").hide();
+                    $("#scene-1-titles").hide();
+                } else {
+                    flasher.warning('Please complete the activities.');
+                }
+            });
+
+            $("#activity-for-kid-2-activity-previous-btn").click(function() {
+                $("#story-2").hide();
+                $("#story-1").show();
+                $("#activity-for-kid-2-activity-next-btn").parent().show();
+                $("#activity-for-kid-2-activity-finish-btn").parent().hide();
+                $("#activity-for-kid-2-activity-previous-btn").parent().hide();
+            });
+
+            $("#activity-for-kid-2-activity-next-btn").click(function() {
+                $("#story-1").hide();
+                $("#story-2").show();
+                $("#activity-for-kid-2-activity-next-btn").parent().hide();
+                $("#activity-for-kid-2-activity-finish-btn").parent().show();
+                $("#activity-for-kid-2-activity-previous-btn").parent().show();
+
+            });
+
+            $("#scene-3-activity-2").click(function() {
+                $(".modal").modal('hide');
+
+                $(".bg-video").hide();
+                var video = $("#bg-1").show()[0];
+                video.muted = false;
+                video.play();
+                video.playbackRate = 0.9;
+                $("#study-material-modal").modal('show');
+                $("#timer-box-div").hide();
+                $("#timer-box-div").show();
+                updateTimer();
+                $("#activity-for-kid-2").modal('show');
+            });
+
+            $('#activity-for-kid-2-activity-close-btn').click(function() {
+                $(".modal").modal('hide');
+
+                $("#activity-for-kid-2").modal('hide');
+
+                $(".bg-video").hide();
+                var video = $("#bg-1").show()[0];
+                video.muted = false;
+                video.play();
+                video.playbackRate = 0.9;
+                $("#study-material-modal").modal('show');
+                $("#timer-boxrdiv").hide();
+            });
+
+            $(".activity-2-answer").click(function() {
+                $('.activity-2-answer').removeClass('button-danger').addClass('button-info');
+                $('.activity-2-answer').removeClass('button-success').addClass('button-info');
+
+                if ($(this).data('status') === 'correct') {
+                    $(this).removeClass('button-info').addClass('button-success');
+                    $("#activity-for-kid-2-activity-next-btn").parent().show();
+                } else {
+                    $(this).removeClass('button-info').addClass('button-danger');
+                    setTimeout(() => {
+                        $(this).removeClass('button-danger').addClass('button-info');
+                    }, 1000);
+                }
+            });
 
             $('.activity-answer').click(function() {
                 $(this).parent().parent().parent().find('.activity-answer').each(function() {
@@ -532,7 +818,8 @@
                 if ($(this).data('status') === 'correct') {
 
                     $(this).removeClass('button-info').addClass('button-success');
-                    $(this).parent().parent().parent().parent().find('.activity-answer-box').text($(this)
+                    $(this).parent().parent().parent().parent().find('.activity-answer-box').text($(
+                            this)
                         .text());
 
                     var isAllAnswered = true;
@@ -544,7 +831,7 @@
 
                     });
                     if (isAllAnswered) {
-                        $("#activity-for-kid").modal('hide');
+                        $(".modal").modal('hide');
                         $(".bg-video").hide();
                         var video = $("#bg-9").show()[0];
                         video.muted = false;
@@ -559,7 +846,6 @@
                     setTimeout(() => {
                         $(this).removeClass('button-danger').addClass('button-info');
                     }, 1500);
-
                 }
             });
 
@@ -584,6 +870,7 @@
             });
 
             $('#activity-close-btn').click(function() {
+                $(".modal").modal('hide');
 
                 $("#activity-for-kid").modal('hide');
 
@@ -598,12 +885,13 @@
             });
 
             $("#scene-3-activity-1").click(function() {
+                $(".modal").modal('hide');
+
                 $("#study-material-modal").modal('hide');
                 $("#activity-for-kid").modal('show');
                 $("#timer-box-div").show();
                 updateTimer();
             });
-
 
             $("#scene-1-start-button").click(function() {
                 $(".bg-video").hide();
@@ -616,6 +904,8 @@
             });
 
             $("#bg-2").on('ended', function() {
+                $(".modal").modal('hide');
+
                 $("#stage-2-form-modal").modal('show');
                 $("#scene-1-start-button-div").hide();
                 $("#scene-1-titles").hide();
@@ -655,6 +945,8 @@
                                     "Please check your " + response.email +
                                     " email for the verification code and enter it below."
                                 );
+                                $(".modal").modal('hide');
+
                                 $("#email-verification-modal").modal('show');
                             }
 
@@ -738,9 +1030,10 @@
                 });
             });
 
-
             // SCENE 03
             $("#bg-3").on('ended', function() {
+                $(".modal").modal('hide');
+
                 $("#study-material-modal").modal('show');
                 $("#timer-box-div").hide();
                 timeLeft = 600;
@@ -784,6 +1077,8 @@
             });
 
             $("#bg-6").on('ended', function() {
+                $(".modal").modal('hide');
+
                 $("#question-from-kid").modal('show');
                 $("#scene-1-start-button-div").hide();
                 $("#scene-1-titles").hide();
@@ -812,16 +1107,22 @@
             });
 
             $("#bg-8").on('ended', function() {
+                $(".modal").modal('hide');
+
                 $("#question-from-kid").modal('show');
                 $("#scene-1-start-button-div").hide();
                 $("#scene-1-titles").hide();
             });
 
             $("#bg-7").on('ended', function() {
+                $(".modal").modal('hide');
+
                 $("#activity-for-kid").modal('show');
             });
 
             $("#bg-9").on('ended', function() {
+                $(".modal").modal('hide');
+
                 $(".bg-video").hide();
                 var video = $("#bg-1").show()[0];
                 video.muted = false;
@@ -850,6 +1151,7 @@
                     setTimeout(updateTimer, 1000);
                 } else {
                     $(".bg-video").hide();
+                    $(".modal").modal('hide');
                     $("#stage-2-form-modal").modal('hide');
                     $("#email-verification-modal").modal('hide');
                     $("#question-from-kid").modal('hide');
@@ -863,6 +1165,8 @@
             }
 
             $("#bg-10").on('ended', function() {
+                $(".modal").modal('hide');
+
                 $(".bg-video").hide();
                 var video = $("#bg-1").show()[0];
                 video.muted = false;
@@ -873,6 +1177,9 @@
                 timeLeft = 600;
                 $("#scene-1-start-button-div").hide();
                 $("#scene-1-titles").hide();
+
+                startTimer();
+
             });
 
             $("#stage-2-form-modal").on("shown.bs.modal", function() {

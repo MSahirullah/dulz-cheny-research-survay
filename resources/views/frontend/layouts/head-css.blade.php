@@ -87,17 +87,6 @@
         background: rgba(255, 223, 0, 0.5);
     } */
 
-    @font-face {
-        font-family: 'Sharnay';
-        src: url('{{ asset('public/font/sharnayregular.ttf') }}') format('truetype');
-        font-weight: normal;
-        font-style: normal;
-    }
-
-    .sharnay {
-        font-family: 'Sharnay', sans-serif;
-    }
-
     .raleway {
         font-family: "Raleway", sans-serif;
     }
